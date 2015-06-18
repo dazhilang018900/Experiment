@@ -1,0 +1,8 @@
+a push system containing elements below
+	|-CampusServer (j2ee server on centos)
+	|---db/*.sql
+	|-client/CampusClient(client app on android)
+	|-pushwebservice(sns website publisher)
+	|-wordpress(movie website publisher)
+	|-mess(introduction documents)
+
