@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="528" key="DIALOG_Y_ORIGIN"/>
+		<item value="1384" key="DIALOG_X_ORIGIN"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
+		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|微软雅黑" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="65dp" key="selection"/>
+		<list key="findhistory">
+			<item value="50dp"/>
+			<item value="75dp"/>
+			<item value="subs"/>
+			<item value="SubNews = &quot;news_yaowen&quot;;"/>
+			<item value="SubHotVideo = &quot;pkusz_notification&quot;;"/>
+			<item value="SubGoodLife = &quot;video_cievideo&quot;;"/>
+			<item value="SubAchievment = &quot;video_hsbcvideo&quot;;"/>
+			<item value="cb_leisureVideo.setChecked(false);"/>
+		</list>
+		<list key="replacehistory">
+			<item value="65dp"/>
+			<item value="50dp"/>
+			<item value="SubNews = &quot;news&quot;;"/>
+			<item value="SubHotVideo = &quot;hot-video&quot;;"/>
+			<item value="SubGoodLife = &quot;good-life&quot;;"/>
+			<item value="SubAchievment = &quot;achievment&quot;;"/>
+			<item value=""/>
+			<item value="SubHotVideo=&quot;hot-video&quot;;"/>
+		</list>
+	</section>
+</section>

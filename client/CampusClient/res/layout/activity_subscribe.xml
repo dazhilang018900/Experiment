@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg3"
+    android:orientation="vertical"
+    android:paddingLeft="90dip" >
+
+    <CheckBox
+        android:id="@+id/subAll"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:checked="true"
+        android:paddingTop="20dip"
+        android:text="订阅所有" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/subNews"
+        android:layout_width="wrap_content"
+      android:layout_height="65dp"
+        android:checked="true"
+        android:paddingTop="20dip"
+        android:text="南燕新闻" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/subHotVideo"
+        android:layout_width="wrap_content"
+      android:layout_height="65dp"
+        android:checked="true"
+        android:paddingTop="20dip"
+        android:text="热点视频" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/subGoodLife"
+        android:layout_width="wrap_content"
+          android:layout_height="65dp"
+        android:checked="true"
+        android:paddingTop="20dip"
+        android:text="精彩生活" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/subAchievment"
+        android:layout_width="wrap_content"
+      android:layout_height="65dp"
+        android:checked="true"
+        android:paddingTop="20dip"
+        android:text="科研成果" >
+    </CheckBox>
+
+    <Button
+        android:id="@+id/btn_subsub"
+        android:layout_width="150dip"
+      android:layout_height="65dp"
+        android:layout_marginTop="20dip"
+        android:text="提交"
+        android:textColor="@drawable/blue"
+        android:textSize="22dip" >
+    </Button>
+
+</LinearLayout>

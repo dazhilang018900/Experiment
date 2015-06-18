@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="5dp"
+    android:background="@drawable/bg3"
+    >       
+ 
+          
+       <TextView  
+           android:id="@+id/webview_appName"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="appName"
+           android:padding="4dip"
+           android:textSize="16sp"
+           />
+       
+
+   
+    <WebView
+        android:id="@+id/webview_2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        />
+    
+     <Button android:text="订阅该应用" 
+          	android:id="@+id/btnSubApp"
+        	android:textColor="@drawable/magenta"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:background="@drawable/button3"  />
+       
+</LinearLayout>

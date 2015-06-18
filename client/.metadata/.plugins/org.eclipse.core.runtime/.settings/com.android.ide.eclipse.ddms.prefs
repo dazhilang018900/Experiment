@@ -1,0 +1,11 @@
+ddms.logcat.auotmonitor.level=error
+ddms.logcat.automonitor.userprompt=true
+eclipse.preferences.version=1
+logcat.view.colsize.Application=424
+logcat.view.colsize.Level=26
+logcat.view.colsize.PID=54
+logcat.view.colsize.TID=54
+logcat.view.colsize.Tag=119
+logcat.view.colsize.Text=912
+logcat.view.colsize.Time=143
+logcat.view.filters.list=name\: 'chats', tag\: 'ChatsActivity', text\: '', pid\: '', app\: '', level\: 'verbose', name\: 'AppActivity', tag\: 'AppActivity', text\: '', pid\: '', app\: '', level\: 'verbose', name\: 'Chatsactivity', tag\: 'ChatsActivity', text\: '', pid\: '', app\: '', level\: 'verbose', name\: 'AppWebActivity', tag\: 'AppWebActivity', text\: '', pid\: '', app\: '', level\: 'verbose', 

@@ -1,0 +1,7 @@
+package org.androidpn.demoapp;
+
+import Activity;
+
+public class ChatActivity extends Activity {
+
+}

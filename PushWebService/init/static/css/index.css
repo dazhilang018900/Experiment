@@ -1,0 +1,72 @@
+/*#page {
+
+}*/
+
+#blurBg {
+	position:fixed;
+	top: -30px;
+	height: 0px;
+	width: 100%;
+	z-index:-1;
+}
+
+#blurBg img{
+	opacity:0.8;
+	position:absolute;
+	width: 100%;
+	height:  auto;
+	min-height:100%;
+}
+
+
+#main-block{
+	height:auto;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+
+#main-block .headbar {
+	width: 100%;
+	height: 10%;
+	background: rgb(138,3,7);
+}
+
+#main-block img{
+	width:100%;
+}
+
+#main-block ul {
+	list-style:none;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+#main-block ul li {
+	overflow: hidden;
+	width: auto;
+	height: auto;
+	display: inline;
+}
+
+#main-block ul li a {
+	width: 100%;
+	height: auto;
+	/*background-color: gray; padding: 20px;*/
+	/*z-index: -1*/
+	/*float: left;*/
+}
+
+/*#linhc_page */
+
+
+
+
+
+/*#main-block #a2{
+	position:relative;
+	right:70%;
+}*/

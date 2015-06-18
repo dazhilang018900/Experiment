@@ -1,0 +1,119 @@
+[
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7f972d2aa0fcb741fc84a9a10c98555f6f431a7a",
+    "jarFileModificationDate": "2014-03-23T02:43:34+08:00",
+    "location": "/host/ubuntu/android-sdk-linux/platforms/android-19/android.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
+    "jarFileModificationDate": "2014-07-27T17:11:31+08:00",
+    "location": "/home/x/Experiment/client/B736/libs/android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "92822ec981a4d0a7f002c792e7b3b60f9a1f26fa",
+    "jarFileModificationDate": "2013-04-22T15:05:18+08:00",
+    "location": "/host/ubuntu/android-sdk-linux/platforms/android-15/android.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e813b8722c387b22e1adccf7914729db09bcb4a9",
+    "jarFileModificationDate": "2014-04-09T07:09:50+08:00",
+    "location": "/home/x/Experiment/client/CampusClient/lib/httpcore-4.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "juv-rtmp-client-1.5.10",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d846be9ee61f2d083d5dbcb8831febb5bb41c813",
+    "jarFileModificationDate": "2014-04-09T07:09:50+08:00",
+    "location": "/home/x/Experiment/client/CampusClient/lib/juv-rtmp-client-1.5.10.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
+    "jarFileModificationDate": "2014-04-09T07:09:50+08:00",
+    "location": "/home/x/Experiment/client/CampusClient/libs/android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.lang",
+    "version": {
+      "major": 2,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "16313e02a793435009f1e458fa4af5d879f6fb11",
+    "jarFileModificationDate": "2014-04-09T07:09:50+08:00",
+    "location": "/home/x/Experiment/client/CampusClient/lib/commons-lang-2.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "annotations",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "66b3409a2e8ff4c83808889b0b510fdbf678f246",
+    "jarFileModificationDate": "2014-03-23T02:08:41+08:00",
+    "location": "/host/ubuntu/android-sdk-linux/tools/support/annotations.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.thoughtworks.xstream.xstream",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c23741bfc42efa760c6acdb90a131814c70aeb8d",
+    "jarFileModificationDate": "2014-04-09T07:09:50+08:00",
+    "location": "/home/x/Experiment/client/CampusClient/lib/xstream-1.3.1.jar",
+    "javaRuntime": false
+  }
+]

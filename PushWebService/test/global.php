@@ -1,0 +1,3 @@
+<?php
+	$nick = "visitor";
+?>

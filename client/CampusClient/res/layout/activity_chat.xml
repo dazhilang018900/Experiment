@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+	<ListView
+	    android:id="@+id/MessageListView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_above="@+id/rl_bottom"
+	    android:layout_below="@+id/ChatTitleLabel"
+	    android:layout_marginLeft="10.0dip"
+	    android:layout_marginRight="10.0dip"
+	    android:cacheColorHint="#00000000"
+	    android:divider="@null"
+	    android:dividerHeight="5dp"
+	    android:scrollbars="none" />
+	
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#0f0f0f" >
+		  <ImageView
+            android:id="@+id/SendImgView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/GalleryBtn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/SendBtn"
+            android:layout_alignParentTop="true"
+            android:onClick="startGalleryActivity"
+            android:text="图片"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/SendBtn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/GalleryBtn"
+            android:text="发送"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/MessageEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/GalleryBtn"
+            android:layout_toRightOf="@+id/SendImgView"
+            android:ems="10"
+            android:singleLine="true"
+            android:textSize="18sp" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ChatTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_layout"
+        android:layout_centerHorizontal="true"
+        android:text="和..对话中" />
+
+</RelativeLayout>

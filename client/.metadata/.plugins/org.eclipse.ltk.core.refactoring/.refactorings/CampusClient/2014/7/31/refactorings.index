@@ -1,0 +1,17 @@
+1406469489352	Rename method 'getFriend'
+1406475010508	Rename type 'SessionManager'
+1406475420336	Rename field 'smThread'
+1406475916163	Rename field 'chatAct'
+1406478081148	Copy compilation unit
+1406478103660	Rename type 'AppsActivity'
+1406478151507	Rename type 'NotesActivity'
+1406478741625	Delete element
+1406482407061	Delete element
+1406483211899	Rename type 'ContactEle'
+1406485842796	Copy compilation unit
+1406485963048	Rename field 'latestChats'
+1406485973830	Rename field 'chatUiHandler'
+1406485985686	Rename field 'chatsUiHandler'
+1406487198780	Rename field 'messageLists'
+1406487213153	Rename local variable 'messageList'
+1406488329231	Rename type 'AppPushsActivity'

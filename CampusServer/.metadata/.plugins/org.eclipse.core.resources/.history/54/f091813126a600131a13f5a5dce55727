@@ -1,0 +1,69 @@
+package org.androidpn.demoapp;
+
+import java.util.List;
+
+import org.jivesoftware.smack.PacketListener;
+import org.jivesoftware.smack.XMPPConnection;
+import org.jivesoftware.smack.filter.MessageTypeFilter;
+import org.jivesoftware.smack.filter.PacketFilter;
+import org.jivesoftware.smack.packet.Message;
+import org.jivesoftware.smack.packet.Packet;
+import org.jivesoftware.smack.util.StringUtils;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.app.Activity;
+import android.util.Log;
+import android.view.Menu;
+
+public class ChatActivity extends Activity {
+	private XMPPConnection connection;
+	List messages;
+	public String USERNAME;
+	public String PASSWORD;
+	public String talker;//who you are talking with
+	private Handler mHandler = new Handler();
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		USERNAME = getIntent().getStringExtra("userName");
+		PASSWORD = getIntent().getStringExtra("Pwd");
+		setContentView(R.layout.activity_chat);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.chat, menu);
+		return true;
+	}
+	
+	public void setConnection(XMPPConnection connection) {
+		this.connection = connection;
+		if (connection != null) {
+			// Add a packet listener to get messages sent to us
+			PacketFilter filter = new MessageTypeFilter(Message.Type.chat);
+			connection.addPacketListener(new PacketListener() {
+				@Override
+				public void processPacket(Packet packet) {
+					Message message = (Message) packet;
+					if (message.getBody() != null) {
+						String fromName = StringUtils.parseBareAddress(message
+								.getFrom());
+						Log.i("XMPPChatDemoActivity", "Text Recieved " + message.getBody()
+								+ " from " + fromName );
+						messages.add(fromName + ":");
+						messages.add(message.getBody());
+						// Add the incoming message to the list view
+						mHandler.post(new Runnable() {
+							public void run() {
+								//selectItem(side);
+							}
+						});
+					}
+				}
+			}, filter);
+		}
+
+	}
+}

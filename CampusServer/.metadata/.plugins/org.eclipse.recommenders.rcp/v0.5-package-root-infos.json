@@ -1,0 +1,1120 @@
+[
+  {
+    "symbolicName": "bcprov",
+    "version": {
+      "major": 1,
+      "minor": 50,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "be504b4901d75cbe129a178f5830e6c358ec214c",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/bcprov-jdk15on-150.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "unix-0.5",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "977232b8cda7691cdfc501a078e831837524e749",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/unix-0.5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "growl4j",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0685b6da559fb1ed05ace9591a3130289c8d1a7b",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/os-specific/mac/growl4j.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b20024de57c62c13b1212c28541069627e51498b",
+    "jarFileModificationDate": "2014-01-17T02:51:04+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8a63bccb6b8049c2bb9ea376d3be3164453634d3",
+    "jarFileModificationDate": "2014-01-17T02:44:37+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f317c1b846ab01a1c00d849881778a47a7e728bf",
+    "jarFileModificationDate": "2012-09-20T17:21:42+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/java-atk-wrapper.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "92822ec981a4d0a7f002c792e7b3b60f9a1f26fa",
+    "jarFileModificationDate": "2013-04-22T15:05:18+08:00",
+    "location": "/host/ubuntu/android-sdk-linux/platforms/android-15/android.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a6e94cba6c6b433209648a01f1efb9d77d74904c",
+    "jarFileModificationDate": "2014-01-17T02:44:24+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "net.java.otr4j",
+    "version": {
+      "major": 0,
+      "minor": 10,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "78aa79c53aa6c836564f81e1d1c7efdebda1c1d5",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/otr4j.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.objenesis",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3782f3031d28d6cee1c063783297e179e74c9ab0",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/objenesis-1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.felix.main",
+    "version": {
+      "major": 3,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f1c19117b73a6819fa91eb646ecba7f41073dc2a",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/felix.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.igniterealtime.smack-ext",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4f516ccc0e9d654a05786bec6c976eba6deb6879",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/smackx.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jsocks-klea",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "eb3d0b4f8f0bb43b18a9437a0aabbc66405ec964",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jsocks-klea.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "gdata-contacts-3.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2bd5862f12a10f5e6cd195f7f042d2a3cf2d327f",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/gdata-contacts-3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jain-sdp",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a86b73dc5ad9d7f69c58c5afd09773ff101a4345",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jain-sdp.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "libdbus-java-2.7",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4e9790305aebe5a12b594e5777d5a6e009d11be0",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/libdbus-java-2.7.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.xmpp.jnsapi",
+    "version": {
+      "major": 0,
+      "minor": 0,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1348590eb42911f3dc7a08577a834f057ed5350a",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jnsapi.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "fmj",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "010dfcf11e353b571cc367d04d4799302dc723b9",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/fmj.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jmdns",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bc9cc59ffb692d1898a765069ecd53d2ac122eef",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jmdns.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "forms-1.2.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "863fcfc8bbf0e1acaa840a55fa92d569ac337571",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/forms-1.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.googlecode.json-simple",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5d6f9b6a9ddca2a28c0216cc44efb2e20d9c23b5",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/json-simple-1.1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7fa720888788b5e13ed83acf16b3147c70707564",
+    "jarFileModificationDate": "2014-01-17T02:46:48+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "dnsjava",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e31f911035e1c9d98743b2afca28f2b762ccd224",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/dnsjava.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "swing-worker-1.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "34b72b73cdd56143c259ea98d6e23afc025c2725",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/swing-worker-1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.easymock",
+    "version": {
+      "major": 3,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "aac40b4324d9894ac146c3089a40e389239eba08",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/easymock-3.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.dts.spell.jmyspell-core",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "beta-2"
+    },
+    "jarFileFingerprint": "47a3f90f405377fc9239867e0ee91b48e1936ef2",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jmyspell-core.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "gdata-contacts-meta-3.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9ff59bf42039940fde0edfda5f38ba736e8133d5",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/gdata-contacts-meta-3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "juv-rtmp-client-1.5.10",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d846be9ee61f2d083d5dbcb8831febb5bb41c813",
+    "jarFileModificationDate": "2013-08-05T20:57:10+08:00",
+    "location": "/host/.git/androidpn/androidpn-client-xiaobing/lib/juv-rtmp-client-1.5.10.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "joscar-common",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b2006641c48302e4fafa00ef005e703e47c155be",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/joscar-common.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "ymsg_network_v0_67",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "aa189050d5e928889155a18630882260ab4cb5dc",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/ymsg_network_v0_67.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "cac5288673b4544d64506e73070d7e777a2fc463",
+    "jarFileModificationDate": "2014-01-17T02:34:12+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/pulse-java.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4a6be13368bb64c5a0b0460632d228a1a915f58f",
+    "jarFileModificationDate": "2014-01-28T23:42:12+08:00",
+    "location": "/host/.git/androidpn/XMPPChat/libs/android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "afd93ea301446f36e430c3a2ab4886e766ee1b83",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/httpcore-osgi-4.2.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
+    "jarFileModificationDate": "2013-08-05T20:57:10+08:00",
+    "location": "/host/.git/androidpn/androidpn-client-xiaobing/libs/android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "OrangeExtensions",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a86b56c5253465dce6a395fec2e555e2be34034e",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/os-specific/mac/OrangeExtensions.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.hsqldb.hsqldb",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bd7153caa30958e1c64a3dd38b93e5a7442d9a0e",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/hsqldb.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "log4j",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 17,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5af35056b4d257e4b64b9e8069c0746e8b08629f",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/bundle/log4j.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "laf-widget",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "af84bc01f7588208116e761c3162acacf0f438b7",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/laf-widget.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "cglib-nodep.osgi",
+    "version": {
+      "major": 2,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": "3"
+    },
+    "jarFileFingerprint": "973ff7a19b3e60db0683f759fe2b8166c5cb7521",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/cglib-nodep.osgi-2.1_3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "hexdump-0.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "08b4ea6c9d8f96e13c83fde85c4f9cf0d0fd9753",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/hexdump-0.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "junit",
+    "version": {
+      "major": 0,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8215289e4693ff097981111e8bc7bd161d14c71a",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/bundle/junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f006987f8c4eadd9db9c2567be18fbffc9ad699c",
+    "jarFileModificationDate": "2014-01-17T02:44:54+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jna-platform",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "af109bea46056ef1d09172a96e968adfa8ce74f1",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jna-platform.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jitsi.bccontrib",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "SNAPSHOT"
+    },
+    "jarFileFingerprint": "7e7d544c8b32274d68115c2c5329c074abc21bff",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/bccontrib-1.0-SNAPSHOT.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ccaaaf9944ac952d0d323843b55491e1b673c060",
+    "jarFileModificationDate": "2014-01-17T02:44:45+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d920fe92461cc0ccec24f85d597c7b8f13acd450",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/httpclient-osgi-4.2.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "joscar-protocol",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1025852fcb79571839a0537383ff4acfc796e1e2",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/joscar-protocol.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ab4d0bebb12f6df1a8325ecab40b667d73d16a9d",
+    "jarFileModificationDate": "2014-01-17T02:51:04+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rhino.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "zrtp4j-light",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8793a8d26f8768a79c32f8400237a270161d6809",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/zrtp4j-light.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jain-sip-api",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6c8ff9a960ada2ca7eb110e4335b86fd1e2986aa",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jain-sip-api.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "apache-ant-1.7.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9746af1a485e50cf18dcb232489032a847067066",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/apache-ant-1.7.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e813b8722c387b22e1adccf7914729db09bcb4a9",
+    "jarFileModificationDate": "2013-08-05T20:57:10+08:00",
+    "location": "/host/.git/androidpn/androidpn-client-xiaobing/lib/httpcore-4.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "99129f16442844f6a4a11ae22fbbee40b14d774f",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "322db3959c3383f4be9daa75ffa427d1485879ad",
+    "jarFileModificationDate": "2013-04-22T15:02:58+08:00",
+    "location": "/host/ubuntu/android-sdk-linux/platforms/android-17/android.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jml-1.0b5",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "de36e9cb244bf9dab8cd4aa32b0ff0006b814c31",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jml-1.0b5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "annotations",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "376123c0be2ad5456060e556b21fd4a117e3f075",
+    "jarFileModificationDate": "2013-04-21T22:30:17+08:00",
+    "location": "/host/ubuntu/android-sdk-linux/tools/support/annotations.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c529eb7b04bf8203be3f233cb2df98a8d394147a",
+    "jarFileModificationDate": "2014-01-17T02:51:04+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "SDES4J",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a5fa4324dd5ca8e9a521b7b81071a20f01c44512",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/sdes4j.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.google.guava",
+    "version": {
+      "major": 15,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ed727a8d9f247e2050281cb083f1c77b09dcb5cd",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/guava-15.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jain-sip-ri",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "53512b0835d700ac3e9929984fa94ef5725d9faf",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jain-sip-ri.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jmork",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 5,
+      "qualifier": "SNAPSHOT"
+    },
+    "jarFileFingerprint": "30b3d951ea99f4477685338d986703e90edc6b61",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jmork-1.0.5-SNAPSHOT.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jcalendar-1.4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "90dc9c149b6f3c07e523b10d48a58b22f365b7f0",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jcalendar-1.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "weupnp-0.1.2-SNAPSHOT",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fccd5bf9b3102d135cc2d9b4357129a711f8b789",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/weupnp-0.1.2-SNAPSHOT.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "mac_widgets-0.9.5",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "be2f5de3fd7a4d8195eabb494b0ab3c5dd4d6e95",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/mac_widgets-0.9.5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6c4127d80ed4cf743c55340239a7e351d9740052",
+    "jarFileModificationDate": "2014-01-17T02:46:16+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "ice4j",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "aaa4890e044904a3ea7502aa4cbc4c4ca7724a7c",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/ice4j.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "gdata-client-meta-1.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9d0874194c10a87ec41c2dc9296e203c7bf45881",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/gdata-client-meta-1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "pircbot",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3f42a9452cb85cce35accc1ff3c2be56f1d25138",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/pircbot.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "gdata-client-1.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3b44dcc6c6dbbe7b047fa7e2eabbde7c8c3fad7c",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/gdata-client-1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "joscar-client",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b0eaf8c59f4af03dea50449ad91c261484eee43f",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/joscar-client.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-logging",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3b2888239ebec822dff8ed7ebf96293302e4b23b",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/bundle/commons-logging.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "say.swing.jfontchooser",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 5,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c016e41c6a635ffe8c35057b59c7b6f33ad6b337",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jfontchooser-1.0.5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jna",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4f25aa7292f70e721a9b96a6ed49365ba6e03eab",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jna.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "profiler4j-1.0-beta3-SC",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "86baafb3b5a3f56b3d853d47502bb9315b23f34b",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/profiler4j-1.0-beta3-SC.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5d6855f2d0f44aeaa90da59751d908bff2e81a15",
+    "jarFileModificationDate": "2014-01-17T02:44:52+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "gdata-core-1.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "35d0005cc9566a5b1031033ae0cf1295667bcca8",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/gdata-core-1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jsch-0.1.36",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "697caac63c13a05f2f70efdccad225f86705af19",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jsch-0.1.36.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "dhcp4java-1.00",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ce9528b83b4c948b7acbc472916991f35a509f4c",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/dhcp4java-1.00.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.igniterealtime.smack",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "367cd08bbc227aa8def32ac16b33a568f647585f",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/smack.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "libjitsi",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "df941f6cae765f13984d0d23661503e2e9d3a2fb",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/libjitsi.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "dict4j",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "95d47fa172a6f4843b0122845d090fd4113c3e36",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/dict4j.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
+    "jarFileModificationDate": "2013-07-06T16:32:44+08:00",
+    "location": "/host/.git/androidpn/TMP/PKUSZNews/libs/android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "137ea7c95839855fc36af15e0b8aaabde935e0c7",
+    "jarFileModificationDate": "2014-01-17T02:51:04+08:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jdic_misc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9c6843bdc6f74bb563e05506c59c2212d8ee1c91",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/jdic_misc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.lang3",
+    "version": {
+      "major": 3,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "905075e6c80f206bbe6cf1e809d2caa69f420c76",
+    "jarFileModificationDate": "2014-03-06T17:12:16+08:00",
+    "location": "/host/.git/androidpn/jitsi-master/lib/installer-exclude/commons-lang3-3.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "asmack-2010.05.07",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "78842451dc1b8fec85ab6c16ce80e5f980bf7339",
+    "jarFileModificationDate": "2014-01-28T23:42:12+08:00",
+    "location": "/host/.git/androidpn/XMPPChat/libs/asmack-2010.05.07.jar",
+    "javaRuntime": false
+  }
+]

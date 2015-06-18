@@ -1,0 +1,48 @@
+﻿接口文档：
+URL前缀： http://219.223.222.231:8080/androidpn/
+
+
+获取所有可订阅的应用列表
+请求URL: subscriptions.do?action=listApps
+返回:
+<xml><result>succeed</result><list>
+  <org.androidpn.server.model.App>
+    <id>3</id>
+    <name>b736</name>
+    <desp>深圳大学城B736乘车工具，通过互助推送方式让乘坐736不再难</desp>
+    <url>http://219.223.222.231/b736</url>
+  </org.androidpn.server.model.App>
+  <org.androidpn.server.model.App>
+    <id>4</id>
+    <name>pcar</name>
+    <desp>深圳市区拼车工具，方便大家乘车</desp>
+    <url>http://219.223.222.231/pcar</url>
+  </org.androidpn.server.model.App>
+</list></xml>
+或者返回：
+<result>failed</result>
+
+
+管理员推送给在线/指定/所有用户
+当broadcast=N时需要指定username，以;分隔
+notification.do?action=admin_send&broadcast=[Y|N|A]&title=xxx&message=xxx&uri=xxx[&username=xx;yy;zz]
+返回：
+
+推送给订阅了app的用户：
+notification.do?action=appPush&title=xxx&message=xxx&uri=xxx&appName=b736
+返回：
+<result>succeed</result>
+或
+<result>failed</result>
+
+订阅：
+Subscription.do?action=addSubscribe&username=xx&appid=xx
+返回：
+subscribe:success
+subscribe:failure
+
+取消订阅：
+Subscription.do?action=delSubscribe&username=xx&appid=xx
+返回：
+unsubscribe:success
+unsubscribe:failure
