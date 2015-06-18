@@ -157,7 +157,7 @@ public class AppActivity extends Activity {
 						}else{
 							//Util.alert(AppActivity.this, "应用列表已经更新,当前共发现"+list.size()+"款app");
 							for(App app:list){
-								if(app.getUrl()!="")
+								if(!app.getUrl().trim().equals(""))
 									appList.add(app);
 							}
 							Constants.appList = appList;

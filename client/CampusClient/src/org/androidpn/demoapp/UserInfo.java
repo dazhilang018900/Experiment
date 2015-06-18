@@ -92,8 +92,8 @@ public class UserInfo extends Application {
 	public void initUserInfo(){
 		if (myNotifier.isEmpty()) {
 			HashMap<String, String> addMap = new HashMap<String, String>();
-		    addMap.put("ItemTitle", "关于CampusPuSH");
-		    addMap.put("ItemMessage", "北京大学深圳研究生院|通信与信息安全实验室\n\n功能：订阅消息、接收推送消息、上传图片、观看视频、观看直播、实时通讯\n\nTips：\n登陆请使用在http://push.pkusz.edu.cn上注册的用户名和密码。\n订阅页面，不选中提交，代表取消订阅；\n视频直播，发布的直播视频名称是用户名_视频名称（暂不开放）");
+		    addMap.put("ItemTitle", "关于校园信息服务系统");
+		    addMap.put("ItemMessage", "北京大学深圳研究生院|通信与信息安全实验室\n\n功能：订阅栏目消息、接收推送消息、观看视频、观看直播\n\nTips：\n登陆请使用在http://push.pkusz.edu.cn上注册的用户名和密码。\n订阅页面，不选中提交，代表取消订阅；\n视频直播，发布的直播视频名称是用户名_视频名称（暂不开放）");
 		    addMap.put("ItemUri", "http://push.pkusz.edu.cn");
 		    this.myNotifier.add(addMap);    
 		}
