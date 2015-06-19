@@ -1,0 +1,7 @@
+package org.androidpn.util;
+
+import WebViewClient;
+
+public class MyWebViewClient extends WebViewClient {
+
+}

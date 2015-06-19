@@ -1,0 +1,232 @@
+package org.androidpn.demoapp;
+
+import android.app.Activity;
+
+import java.util.List;
+import java.util.Set;
+
+import org.androidpn.client.Constants;
+import org.androidpn.server.model.User;
+import org.androidpn.server.model.App;
+import org.androidpn.util.GetPostUtil;
+import org.androidpn.util.Util;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class AppWebActivity extends Activity {
+
+	private static String LOGTAG = "AppWebActivity";
+	private String userId; 
+	private App app=null;
+	private String appName=null;
+	private String url=null;
+	private List<App> appList=null;
+	private Set<String> subApps=null;
+	private WebView webView;
+	@Override
+	protected void onNewIntent(Intent intent) {
+		Log.i(LOGTAG,"onNewIntent");
+		// 进入与某个好友的会话
+		if (intent.getStringExtra("appName") != null&&intent.getStringExtra("url") != null) {
+			 appName=intent.getStringExtra("appName");
+			 url=intent.getStringExtra("url");
+			 Util.alert(AppWebActivity.this,"进入应用"+appName);
+		}else{
+			Util.alert(AppWebActivity.this,"onNewIntent:获取应用信息失败");
+			this.finish();
+		}
+	}
+	
+	protected void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		Log.i(LOGTAG,"onCreate");
+		userId = getIntent().getStringExtra("userID");
+		if(userId==null){
+			Util.alert(AppWebActivity.this,"用户初始化失败");
+			this.finish();
+		}
+		appName= getIntent().getStringExtra("appName"); 
+		if(appName==null||appName==""){
+			Util.alert(AppWebActivity.this,"应用名为空");
+			this.finish();
+		}
+//		http://219.223.222.231/b736
+		url= getIntent().getStringExtra("url");
+		String userName  = getIntent().getStringExtra("userName");
+		url += "/index.php?nick="+userName;
+//		url = "http://219.223.222.231";
+		if(url==null){
+			Util.alert(AppWebActivity.this,"应用链接为空");
+			this.finish();
+		}
+		appList=Constants.appList;
+		subApps=Constants.subApps;
+		if(appList==null||appList.size()==0||subApps==null){
+			Util.alert(AppWebActivity.this,"应用列表为空");
+			this.finish();
+		}
+		
+		for(App app:appList){
+			Log.i(LOGTAG,app.getName());
+			if(app.getName().equals(appName)){
+				this.app=app;
+				Log.i(LOGTAG,appName);
+				break;
+			}
+		}
+		if(this.app==null){
+			Util.alert(AppWebActivity.this,"获取应用信息失败");
+			this.finish();
+		}
+		
+		 setContentView(R.layout.activity_app_webview);
+		 webView  = (WebView) findViewById(R.id.webview_2);
+		 TextView appNameView=(TextView)findViewById(R.id.webview_appName);
+		 appNameView.setText(appName);
+		 webView.setWebViewClient(new MyWebViewClient()); 
+		 if(subApps.contains(appName)){
+			 setUnsubBtn();
+		 }else{
+			setSubBtn();
+		 }
+		 WebSettings webSettings = webView.getSettings();
+		 webSettings.setSavePassword(false);
+		 webSettings.setSaveFormData(false);
+		 webSettings.setJavaScriptEnabled(true);
+		 webSettings.setSupportZoom(false);
+		
+		// webView.setWebChromeClient(new MyWebChromeClient());
+}
+	private void setUnsubBtn(){
+		 Button appSubView=(Button)findViewById(R.id.btnSubApp);
+		 appSubView.setText("点击取消订阅该应用");
+		 appSubView.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Long appId=app.getId();
+				delSubscribe(userId,appId);
+			}
+		 }
+	 );
+	}
+	 private void setSubBtn(){
+		 Button appSubView=(Button)findViewById(R.id.btnSubApp);
+		 appSubView.setText("点击订阅该应用");
+		 appSubView.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Long appId=app.getId();
+				addSubscribe(userId,appId);
+			}
+		 }
+	  ); 
+	 }
+	protected void onResume(){
+		super.onResume();
+		webView.loadUrl(url);       
+	}
+	
+	
+	/**
+	 * addSubscribe(username,appid)
+	 * 订阅某个应用
+	 */
+	private void addSubscribe(String s,Long t){
+		StringBuilder parameter = new StringBuilder();
+		parameter.append("action=addSubscribe"); //
+		parameter.append("&username=" + s + "&appid="+ t);
+		new AsyncTask<StringBuilder, Integer, String>() {
+			@Override
+			protected String doInBackground(StringBuilder... parameter) {
+				/*--End--*/
+				String resp = GetPostUtil.send("POST",
+						getString(R.string.androidpnserver) + "subscriptions.do",
+						parameter[0]);
+				return resp;
+			}
+
+			@Override
+			protected void onPostExecute(String resp) {
+				Log.i(LOGTAG,"addSubs:"+resp);
+				if (!"succeed".equals( Util.getXmlElement(resp, "result"))) {
+					String reason =  Util.getXmlElement(resp, "reason");
+					Util.alert(AppWebActivity.this, "添加关注失败:"+resp
+							+ (reason == null ? "" : reason));
+					return;
+				}else {
+					Util.alert(AppWebActivity.this, "添加关注成功");
+					subApps.add(appName);
+					setUnsubBtn();
+				}
+			}
+		}.execute(parameter);
+	}
+	
+	
+	/**
+	 * delSubscribe(username,appid)
+	 * 取消订阅某个应用
+	 */
+	private void delSubscribe(String s,Long t){
+		StringBuilder parameter = new StringBuilder();
+		parameter.append("action=delSubscribe"); //
+		parameter.append("&username=" + s + "&appid="+ t);
+		new AsyncTask<StringBuilder, Integer, String>() {
+			@Override
+			protected String doInBackground(StringBuilder... parameter) {
+				/*--End--*/
+				String resp = GetPostUtil.send("POST",
+						getString(R.string.androidpnserver) + "subscriptions.do",
+						parameter[0]);
+				return resp;
+			}
+
+			@Override
+			protected void onPostExecute(String resp) {
+				Log.i(LOGTAG,"delSubs:"+resp);
+				if (!"succeed".equals( Util.getXmlElement(resp, "result"))) {
+					String reason =  Util.getXmlElement(resp, "reason");
+					Util.alert(AppWebActivity.this, "取消关注失败:"+resp
+							+ (reason == null ? "" : reason));
+					return;
+				}else {
+					Util.alert(AppWebActivity.this, "取消关注成功");
+					subApps.remove(appName);
+					setSubBtn();
+				}
+			}
+		}.execute(parameter);
+	}
+	
+	
+}
+
+class MyWebViewClient extends WebViewClient{ 
+
+    //重写shouldOverrideUrlLoading方法，使点击链接后不使用其他的浏览器打开。 
+
+ @Override 
+
+ public boolean shouldOverrideUrlLoading(WebView view, String url) { 
+
+     view.loadUrl(url); 
+
+     //如果不需要其他对点击链接事件的处理返回true，否则返回false 
+
+     return true; 
+
+ } 
+} 

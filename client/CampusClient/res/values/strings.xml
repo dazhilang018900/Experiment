@@ -4,7 +4,7 @@
     <string name="stoplocation">停止定位</string>
 	<string name="geton">上车</string>
 	<string name="getoff">等车</string>
-    <string name="app_name">CampusPuSH</string>
+    <string name="app_name">校园信息服务系统</string>
     <string name="hello">欢迎使用校园推送客户端</string>
     <string name="settings">设置</string>
     <string name="menu_settings">设置</string>

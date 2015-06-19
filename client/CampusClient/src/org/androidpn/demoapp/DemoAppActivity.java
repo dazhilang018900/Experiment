@@ -63,6 +63,7 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -74,6 +75,9 @@ import android.widget.Toast;
  * 
  * @author Sehwan Noh (devnoh@gmail.com)
  */
+
+
+//主界面
 public class DemoAppActivity extends Activity {
 
 	public static final int MENU_ITEM0 = Menu.FIRST;
@@ -108,7 +112,7 @@ public class DemoAppActivity extends Activity {
 	/**
 	 * @author xu zhigang
 	 * listen to broadcast intent which indicates the current connection status
-	 * and update the UI
+	 * and update the TextView “view_status”
 	 */
 	class DataReceiver extends BroadcastReceiver {
 		@Override
@@ -156,10 +160,11 @@ public class DemoAppActivity extends Activity {
 			status.setText("在线");status.setTextColor(Color.GREEN);
 		}
 		else {
-			status.setText("离线,点击刷新");status.setTextColor(Color.RED);
+			status.setText("离线,尝试刷新...");status.setTextColor(Color.RED);
 		}
 	}
 	
+	//
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         Log.d("xiaobingo", "onCreate()...");
@@ -193,6 +198,53 @@ public class DemoAppActivity extends Activity {
 		setConnectionStatus();
 		
         IsNetworkConn isConn = new IsNetworkConn(DemoAppActivity.this);
+        
+        //初始化栏目按钮
+        ImageView BtnHotView = (ImageView)this.findViewById(R.id.btn_hot_video);
+		BtnHotView.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent it = new Intent(DemoAppActivity.this, VideoCenterActivity.class);
+				it.putExtra("url", "http://219.223.222.237/category/hot-video/");
+				startActivity(it);
+			}
+		});
+		
+		ImageView BtnGoodLife = (ImageView)this.findViewById(R.id.btn_good_life);
+		BtnGoodLife.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent it = new Intent(DemoAppActivity.this, VideoCenterActivity.class);
+				it.putExtra("url", "http://219.223.222.237/category/good-life/");
+				startActivity(it);
+			}
+		});
+		
+		ImageView BtnAchievment = (ImageView)this.findViewById(R.id.btn_achievment);
+		BtnAchievment.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent it = new Intent(DemoAppActivity.this, VideoCenterActivity.class);
+				it.putExtra("url", "http://219.223.222.237/category/achievment/");
+				startActivity(it);
+			}
+		});
+		
+		ImageView BtnNews = (ImageView)this.findViewById(R.id.btn_news);
+		BtnNews.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent it = new Intent(DemoAppActivity.this, VideoCenterActivity.class);
+				it.putExtra("url", "http://219.223.222.237/category/news/");
+				startActivity(it);
+			}
+		});
+        
+        // 获取用户订阅的栏目列表，保存到Constants.USER_SUBSCRIPTION
         if(isConn.isConnected)
         (new AsyncTask<String,Integer,String >(){
 			@Override
@@ -232,6 +284,7 @@ public class DemoAppActivity extends Activity {
 			//retrieve subscription catagories
 			
         
+        // 初始化listview（显示接收的推送消息和欢迎消息）
         ArrayList<HashMap<String, String>> listItem = userInfo.getMyNotifier();  
         SimpleAdapter listItemAdapter = new SimpleAdapter(this,listItem,R.layout.list,
         		new String[]{"ItemTitle","ItemMessage","ItemUri"},
@@ -260,9 +313,7 @@ public class DemoAppActivity extends Activity {
 			}
 		}); 
 	 
-		// Settings
-        //Button btn_subscribe = (Button)findViewById(R.id.btn_subscribe);
-        // Button btn_unsubscribe = (Button)findViewById(R.id.btn_unsubscribe);
+    	// 初始化“设置”按钮
         //final EditText subscription = (EditText)findViewById(R.id.subs);
         btn_settings = (Button) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
@@ -271,7 +322,7 @@ public class DemoAppActivity extends Activity {
             }
         });
         
-       //chat button clicked
+       //初始化“社区”按钮
        /* 
         btn_chat=(Button)findViewById(R.id.btn_chat);
         btn_chat.setOnClickListener(new View.OnClickListener() {
@@ -288,7 +339,7 @@ public class DemoAppActivity extends Activity {
 		}); 
 		*/
         
-        //subscribe button clicked
+        //初始化“订阅”按钮
         btn_subscribe = (Button)findViewById(R.id.btn_subscribe);
         btn_subscribe.setOnClickListener(new View.OnClickListener() {			
 			@Override
@@ -302,15 +353,19 @@ public class DemoAppActivity extends Activity {
 			}
 		});
         
-       btn_center = (Button)findViewById(R.id.btn_center);
+        //初始化“资源”按钮
+        /*
+        btn_center = (Button)findViewById(R.id.btn_center);
         btn_center.setOnClickListener(new View.OnClickListener() {			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent itent = new Intent(Intent.ACTION_VIEW,Uri.parse("http://219.223.222.237"));
-				DemoAppActivity.this.startActivity(itent);
+				Intent subIntent = new Intent(DemoAppActivity.this, VideoCenterActivity.class);
+				DemoAppActivity.this.startActivity(subIntent);
 			}
 		});
+        */
+        
+        //初始化“上传”按钮
         /*  
         btn_myUpload = (Button)findViewById(R.id.btn_myUpload);
         btn_myUpload.setOnClickListener(new View.OnClickListener() {			
@@ -325,6 +380,7 @@ public class DemoAppActivity extends Activity {
 		});
         */
         
+        //初始化“拍摄”按钮
         /*        
         btn_myVideo = (Button)findViewById(R.id.btn_myVideo);
         btn_myVideo.setOnClickListener(new View.OnClickListener() {			
@@ -340,6 +396,7 @@ public class DemoAppActivity extends Activity {
 		});    
 		*/
         
+        //初始化“应用”按钮
         btn_apps = (Button)findViewById(R.id.btn_apps);
         btn_apps.setOnClickListener(new View.OnClickListener() {			
 			@Override
@@ -353,6 +410,7 @@ public class DemoAppActivity extends Activity {
 			}
 		});    
         
+        //初始化“推送”按钮
         /*
         Button btn_push=(Button)findViewById(R.id.btn_push);
         btn_push.setOnClickListener(new View.OnClickListener() {
@@ -364,6 +422,7 @@ public class DemoAppActivity extends Activity {
         }); */
     }
 	
+	//点击推送按钮，弹出推送窗口，用来提交推送请求
 	private void alertPushForm(){
 		LayoutInflater inflater = (LayoutInflater) this
 				.getSystemService(LAYOUT_INFLATER_SERVICE);
@@ -383,7 +442,7 @@ public class DemoAppActivity extends Activity {
 		}).show();
 	}
 	
-	//client actively　push to other online users
+	// 提交推送请求以后，在后台推送消息
 	private void push(String title,String message,String uri,char broadcast){
 		new AsyncTask<String,Integer,String>(){
 
@@ -419,14 +478,13 @@ public class DemoAppActivity extends Activity {
 	}
 	
 	
-	
+	//初始化活动菜单
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
 		menu.add(0, MENU_ITEM0, 0, " 退出");
 		return true;
 	}
-
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -443,6 +501,7 @@ public class DemoAppActivity extends Activity {
 	/*
 	 * mobile's home or back button clicked(non-Javadoc)
 	 * @see android.app.Activity#onKeyDown(int, android.view.KeyEvent)
+	 * 初始化返回键的事件
 	 */
   	@Override
   	public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -454,7 +513,8 @@ public class DemoAppActivity extends Activity {
   			return super.onKeyDown(keyCode, event);
   		}
   	}
-
+  	
+  	// 返回
   	 public static void goHome(Activity activity) {  
   	     Intent intent = new Intent();
   	     intent.setAction("android.intent.action.MAIN");
