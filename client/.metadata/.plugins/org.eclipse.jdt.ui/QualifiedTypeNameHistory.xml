@@ -26,4 +26,5 @@
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.webkit.WebViewClient"/>
 <fullyQualifiedTypeName name="org.androidpn.util.MyWebViewClient"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
 </qualifiedTypeNameHistroy>

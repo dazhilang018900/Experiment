@@ -3,28 +3,29 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="273" key="DIALOG_WIDTH"/>
 		<item value="528" key="DIALOG_Y_ORIGIN"/>
-		<item value="399" key="DIALOG_HEIGHT"/>
 		<item value="1384" key="DIALOG_X_ORIGIN"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="WebView" key="selection"/>
+		<item value="label" key="selection"/>
 		<list key="findhistory">
+			<item value="label"/>
+			<item value="Campus"/>
+			<item value="video"/>
+			<item value="px"/>
+			<item value="intent"/>
 			<item value="webview"/>
 			<item value="appweb"/>
 			<item value="Button btn"/>
-			<item value="MyWeb"/>
-			<item value="view_connection"/>
-			<item value="listView"/>
-			<item value="mylist"/>
-			<item value="connect"/>
 		</list>
 		<list key="replacehistory">
+			<item value="dp"/>
 			<item value="Button Btn"/>
 			<item value="65dp"/>
 			<item value="50dp"/>
@@ -32,7 +33,6 @@
 			<item value="SubHotVideo = &quot;hot-video&quot;;"/>
 			<item value="SubGoodLife = &quot;good-life&quot;;"/>
 			<item value="SubAchievment = &quot;achievment&quot;;"/>
-			<item value=""/>
 		</list>
 	</section>
 </section>
