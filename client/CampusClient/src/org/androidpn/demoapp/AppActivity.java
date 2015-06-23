@@ -34,7 +34,7 @@ public class AppActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		USERNAME = getIntent().getStringExtra("userID");
-		PASSWORD = getIntent().getStringExtra("Pwd");//
+		PASSWORD = getIntent().getStringExtra("Pwd");
 		setContentView(R.layout.activity_contact);
 		userinfo = (UserInfo) getApplication();
 		if(Constants.appList!=null){

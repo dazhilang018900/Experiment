@@ -1,5 +1,6 @@
 package org.androidpn.demoapp;
 /**
+ * 实时聊天activity（目前该功能不需要）
  * @author xzg
  */
 import java.io.BufferedReader;
@@ -61,52 +62,51 @@ import android.widget.Toast;
 
 public class ChatsActivity extends Activity {
 	/**
-	 * 控制最近与好友会话列表的展示，和与某个好友会话的展示
+	 * 用户之间聊天的activity。、
+	 * 控制显示最近与好友会话列表，和显示与某个好友的会话。
 	 */
 	private static String LOGTAG = "ChatsActivity";
 	private String USERNAME;
 	private String PASSWORD;
 	private String recipient = null;// who you are talking with
 	private List<User> friendList;
-	
 	private Map<String, ChatInfo> latestChats;
-	/**messageLists保存了会话列表（每项为各会话的最近消息）
-	//该数据只能由当前uithread更新，并与ChatManager中保存的数据保持基本同步
-	//同步方法:当前线程创建之初从ChatManager拷贝一份副本
-	//	后面每次ChatManager处数据更新，则用handler通知uithread更新该数据和相应视图*/
+	
+	/*
+	* messageLists保存了会话列表
+	* 该数据只能由当前uithread更新，并与ChatManager中保存的数据保持基本同步
+	* 同步方法:当前线程创建之初从ChatManager拷贝一份副本
+	* 后面每次ChatManager处数据更新，则用handler通知uithread更新该数据和相应视图
+	*/
 	Map<String, List> messageLists = new HashMap();
 	
 	private ChatViewController chatViewMgr = null;
 	
+	/*
+	 * chatsView保存了最近与好友的会话列表的view
+	 */
+	View chatsView = null;	
+	ChatsAdapter chatsAdapter;
 	
-	//chatsView保存了最近与好友会话列表
-	View chatsView = null;	ChatsAdapter chatsAdapter;
-	
-	//chatViews保存了当前多个会话各自对应的视图
+	/*
+	 * chatViews保存了当前多个会话各自对应的视图
+	 */
 	Map<String, View> chatViews = new HashMap();
 	
-	private Integer viewState = 1;// indicate in which view
+	private Integer viewState = 1; //指示当前的view是会话列表view还是具体会话view
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
-		Log.i(LOGTAG, "hello i am oncreate");
 		USERNAME = getIntent().getStringExtra("userID");
-		PASSWORD = getIntent().getStringExtra("Pwd");// used for 8080 connection
-
+		PASSWORD = getIntent().getStringExtra("Pwd");//  
 		uploadUri=getString(R.string.upload_uri);
-		
 		//初始化联系人列表
 		getFriends();
-		
 		//会话列表中显示最近的会话数据
 		latestChats = ChatManager.cloneLatestChats();
-		
 		assert (latestChats != null);
-		
 		chatViewMgr = new ChatViewController();// handle chat view page
-
 		if (getIntent().getStringExtra("recipient") != null) {
 			String recipient = getIntent().getStringExtra("recipient");
 			setChatView(recipient);
@@ -198,11 +198,9 @@ public class ChatsActivity extends Activity {
 		}
 	}
 	
-	/**============================================================================
-	//   set page-view
-	//============================================================================*/
+
 	/**
-	 * 进入会话列表页面
+	 * 进入会话列表页面（设置当前view为会话列表view）
 	 */
 	private void setChatsView() {
 		Log.i(LOGTAG, "setChatsView setChatsView");
@@ -244,9 +242,8 @@ public class ChatsActivity extends Activity {
 		ChatManager.setChatsUiListener(chatsHandler);
 	}
 	
-	
 	/**
-	 * 进入具体会话视图
+	 * 进入具体会话视图页面（设置当前view为具体会话view）
 	 * @param recipient
 	 */
 	private void setChatView(String recipient) {
@@ -263,7 +260,7 @@ public class ChatsActivity extends Activity {
 	}
 
 	/**
-	 * init the page's header with three buttons
+	 * 设置子view
 	 */
 	private void initHeaderView() {
 		//find user button
@@ -299,16 +296,12 @@ public class ChatsActivity extends Activity {
 			}
 		});
 	}
-	
-
 
 	private ChatsHandler chatsHandler = new ChatsHandler();
-
-  /**============================================================================
-	//   chats-view update handler
-	//============================================================================*/
+	
 	/**
 	 * @author xzg
+	 * 监听会话事件，并更新view
 	 * this handler handles with messages which indicates chats update
 	 * for example, a new chat is launched,or some chat has get new messages
 	 * and update the chats-view
@@ -345,10 +338,8 @@ public class ChatsActivity extends Activity {
 	}
 	
  
-   /**============================================================================
-	//  friends and contacts
-	//============================================================================*/
 	/**
+	 * 显示查找用户的窗口
 	 * alert a find user form window
 	 */
 	private void alertFindUserForm() {
@@ -372,6 +363,7 @@ public class ChatsActivity extends Activity {
 	}
 
 	/**
+	 * 查找用户
 	 * related to find and add friend
 	 */
 	@SuppressWarnings("unchecked")
@@ -417,7 +409,7 @@ public class ChatsActivity extends Activity {
 		}.execute(parameter);
 	}
 	/**
-	 * add friend 
+	 * 添加用户为好友
 	 * send a add-friend request to server in a asynchronous way
 	 */
 	@SuppressWarnings("unchecked")
@@ -452,6 +444,7 @@ public class ChatsActivity extends Activity {
 	}
 
 	/**
+	 * 获取好友列表
 	 * init friend List asynchronously
 	 */
 	@SuppressWarnings("unchecked")
@@ -499,6 +492,7 @@ public class ChatsActivity extends Activity {
 	}
 
 	/**
+	 * 显示用户详细信息的窗口
 	 * display a user in a alert window
 	 */
 	private void displayUser(final User u) {
@@ -553,10 +547,8 @@ public class ChatsActivity extends Activity {
 	}
 
 	
-   /**============================================================================
-	//   send msg related 
-	//============================================================================*/
 	/**
+	 * 异步发送消息
 	 * @param to : the recipient of this chat message
 	 * @param content : chat content
 	 * when send a message, add the msg to the send-packet-thread's queue
@@ -579,6 +571,7 @@ public class ChatsActivity extends Activity {
 	}
 	
 	 /**
+	  *  聊天界面中发送图片
 	  *  shows the photo to send in ImageView 
 	  */
     private void showSendPic(String imgPath) {
@@ -626,9 +619,6 @@ public class ChatsActivity extends Activity {
     }
 	
 
-   /**============================================================================
-  	//   launch a chat, init chat-view and so on
-  	//============================================================================*/
   	/** 
 	 * 负责管理具体会话的视图和数据
 	 */
@@ -748,13 +738,13 @@ public class ChatsActivity extends Activity {
 		}
 	}
 
-   /**============================================================================
-	// send message thread 
-	//============================================================================*/
-	// this list stores the packets to send
-	// send-message thread always try to get packet in this list and send it
+	/*
+	 *  待发送的聊天消息的队列
+	 *  this list stores the packets to send
+	 *	send-message thread always try to get packet in this list and send it
+	 */
 	private List<Pair> packetList;
-
+	// 线程安全方式添加新待发送消息到队列
 	@SuppressWarnings("unchecked")
 	public void addMsg(Packet msg) {
 		synchronized (packetList) {
@@ -763,7 +753,11 @@ public class ChatsActivity extends Activity {
 	}
 
 	private SendMsgThread sendThread;
-
+	
+	/*
+	 *  异步发送消息的后台线程
+	 *  不断读取待发送消息队列，并发送消息
+	 */
 	@SuppressWarnings("unused")
 	private class SendMsgThread extends Thread {
 		final XmppManager xmppManager;
@@ -808,25 +802,8 @@ public class ChatsActivity extends Activity {
 		}
 	}
 
-	//
-	//
-	// @Override
-	// public boolean onCreateOptionsMenu(Menu menu) {
-	// // Inflate the menu; this adds items to the action bar if it is present.
-	// getMenuInflater().inflate(R.menu.chat, menu);
-	// return true;
-	// }
-	//
-	// @Override
-	// public void onDestroy(){
-	// super.onDestroy();
-	// SessionManager.removeListener(recipient);
-	// }
-
-   /**============================================================================
-	//   chat-View update handler
-	//============================================================================*/
 	/**
+	 * 处理接收到聊天消息的事件
 	 * @author xzg
 	 * this handler handle with messages which indicate new message sending or sent or received
 	 * and update the chat-view
@@ -909,10 +886,8 @@ public class ChatsActivity extends Activity {
 		}
 	}
 	
-   /**============================================================================
-	// upload an image to server and get a url back
-	//============================================================================*/
 	/**
+	 * 异步发送图片任务
 	 * @author xzg
 	 * this class is similar with submitActivity.submit
 	 */
